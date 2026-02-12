@@ -16,7 +16,7 @@ export default function Task({
     onPinTask,
 }: TaskProps) {
     return (
-        <>
+    
 
             <div className={`list-item ${state}`}>
                 <label
@@ -33,7 +33,7 @@ export default function Task({
                     <span className="checkbox-custom"
                         onClick={() => onArchiveTask(id)} />
                 </label>
-            </div>
+            
 
             <label htmlFor={`title${id}`} aria-label={title} className="title">
                 <input
@@ -56,8 +56,8 @@ export default function Task({
         </button >
     )
 }
+</div>
 
-</>
 );
 }
 

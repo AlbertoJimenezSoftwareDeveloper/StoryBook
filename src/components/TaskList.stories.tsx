@@ -29,7 +29,7 @@ export const Default: Story ={
     },
 };
 
-export const WtihPinnedTask : Story = {
+export const WithPinnedTasks : Story = {
     args:{
         tasks: [
             ...Default.args.tasks.slice(0,5),
