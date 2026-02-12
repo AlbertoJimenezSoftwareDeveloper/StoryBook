@@ -32,8 +32,7 @@ export default function TaskList({
     );
 
     if (loading) {
-        return 
-        (
+        return (
         <div className="list-items"
         data-testid="loading"
         key={"loading"}>
