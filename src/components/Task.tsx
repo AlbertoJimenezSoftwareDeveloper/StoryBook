@@ -20,7 +20,7 @@ export default function Task({
 
             <div className={`list-item ${state}`}>
                 <label
-                    htmlFor={`{archiveTask=${id}`}
+                    htmlFor={`archiveTask-${id}`}
                     aria-label={`archiveTask-${id}`}
                     className="checkbox">
                     <input
@@ -35,14 +35,14 @@ export default function Task({
                 </label>
             
 
-            <label htmlFor={`title${id}`} aria-label={title} className="title">
+            <label htmlFor={`title-${id}`}   className="title">
                 <input
                     type="text"
                     value={title}
                     readOnly={true}
                     name="title"
                     id={`title-${id}`}
-                    placeholder="Input title" />
+                    placeholder="Input title" aria-label={title} />
             </label>
 
             {state !== "TASK_ARCHIVED" && (
@@ -50,9 +50,10 @@ export default function Task({
         className="pin-button"
             onClick={() => onPinTask(id)}
             id={`pinTask-${id}`}
+            aria-label={`pinTask-${id}`}
             key={`pinTask-${id}`}
         >
-            <span className="{`ìcon-star`}" />
+            <span className="ìcon-star" />
         </button >
     )
 }

@@ -17,10 +17,7 @@ interface TaskBoxState {
   error: string | null;
 }
 
-/*
- * The initial state of our store when the app loads.
- * Usually, you would fetch this from a server. Let's not worry about that now
- */
+ 
 const TaskBoxData: TaskBoxState = {
   tasks: [],
   status: 'idle',

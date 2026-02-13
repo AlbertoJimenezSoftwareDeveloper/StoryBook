@@ -25,7 +25,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "init-msw": "msw init public/"
+    "init-msw": "msw init public/",
+    "chromatic": "npx chromatic --project-token=chpt_f2f8b0f7d21d44f"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.3",

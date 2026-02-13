@@ -20,7 +20,7 @@ export default function TaskList() {
     const tasks = useSelector((state: RootState) => {
         const tasksInOrder = [
             ...state.taskbox.tasks.filter((t) => t.state === 'TASK_PINNED'),
-            ...state.taskbox.tasks.filter((t) => t.state === 'TASK_PINNED'),
+            ...state.taskbox.tasks.filter((t) => t.state !== 'TASK_PINNED'),
         ];
 
         const filteredTasks = tasksInOrder.filter((t) => t.state === "TASK_INBOX" || 'TASK_INBOX');
